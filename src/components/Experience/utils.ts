@@ -1,13 +1,11 @@
-import laPiezaLogo from 'assets/laPieza.png';
-import bunkerMcLogo from 'assets/bunkerMc.png';
-import goNetLogo from 'assets/goNet.png';
-import fonYouLogo from 'assets/fonyou.svg';
-
-export type Experience = {
-    
-}
+import laPiezaLogo from 'assets/companies/laPieza.png';
+import bunkerMcLogo from 'assets/companies/bunkerMc.png';
+import goNetLogo from 'assets/companies/goNet.png';
+import fonYouLogo from 'assets/companies/fonyou.svg';
 
 export type Companies = "bunkerMc" | "laPieza" | "goNet" | "fonYou";
+
+export const CompaniesCollection: Companies[] = ['bunkerMc', 'laPieza', 'goNet', 'fonYou'];
 
 export const companyLogos = {
     bunkerMc: {

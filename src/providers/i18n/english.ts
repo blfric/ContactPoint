@@ -222,6 +222,11 @@ export const englishContent = {
     "webDev": "Full-stack Developer",
     "name": "Ricardo",
     "lastName": "Blanco Flores",
-    "currentAddress": "Cerrada Álamos 2511 B, Rancho Grande II, Tehuacán, Puebla",
-    "heroText": "Elevating Experiences, One Line of Code at a Time: Unleashing Full-stack Magic on the Web."
+    "currentAddress": "Tehuacán - Puebla, México",
+    "heroText": "Elevating Experiences, One Line of Code at a Time: Unleashing Full-stack Magic on the Web.",
+    "ExperienceTitle": '+5 years of professional experience',
+    "FooterCopyRights": ' 2024 Ricardo Blanco. All Rights Reserved.',
+    "linkStackFooter": 'Looking for an specific tech or tool?',
+    "linkLabsFooter": 'Here are some projects I had develop on my own',
+    "linkContactFooter": 'Need your own website or a bussines project? Contact me!'
 }

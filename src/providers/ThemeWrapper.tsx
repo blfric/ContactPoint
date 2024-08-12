@@ -30,8 +30,8 @@ export const ThemeWrapper = ({ children }: ThemeOptions) => {
 
   return (
     <ThemeContext.Provider value={{ currentTheme, toggleTheme }} >
-      <AppRoot />
       <ThemeProvider theme={theme}>
+        <AppRoot />
         {children}
       </ThemeProvider>
     </ThemeContext.Provider>

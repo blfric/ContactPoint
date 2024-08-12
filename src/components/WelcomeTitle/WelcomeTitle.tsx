@@ -1,9 +1,10 @@
-import { CarouselItem, CarouselSection, HeroText, SectionCover, WelcomeWrapper } from "./WelcomeTitleStyles";
+import { Carousel } from "components/Carousel/Carousel";
+import { HeroText, SectionCover, WelcomeWrapper } from "./WelcomeTitleStyles";
 import { useTranslation } from 'react-i18next';
-import { ImageCarousel } from "./utils";
 
 export const WelcomeTitle = () => {
     const { t } = useTranslation();
+
     return(
         <WelcomeWrapper>
             <HeroText>
@@ -14,11 +15,7 @@ export const WelcomeTitle = () => {
                     <span></span>
                 </SectionCover>
             </HeroText>
-            <CarouselSection>
-                {ImageCarousel.map(image => {
-                    return <CarouselItem $bgImage={image.src} />
-                })}
-            </CarouselSection>
+            <Carousel />
         </WelcomeWrapper>
     )
 };

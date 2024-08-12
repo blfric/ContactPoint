@@ -1,13 +1,32 @@
 import { ShowProgressively } from "Styling/keyFrames";
 import styled from "styled-components";
 
+export const ExperienceComponent = styled.section`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    background: ${props => props.theme.main};
+    color: ${props => props.theme.textWhite};
+    min-height: 100vh;
+
+    h1 {
+        color: ${props => props.theme.secondary};
+        font-size: 24px;
+        margin: 20px auto 50px;
+    }
+`;
+
 export const ExperienceRow = styled.section`
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    position: relative;
+    height: 16%;
 `;
 
 export const LogoSection = styled.div<{ $bgColor: string, $show: boolean }>`

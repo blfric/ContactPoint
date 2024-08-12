@@ -7,11 +7,13 @@ export const AboutMeWrapper = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
-
+    background-color: ${props => props.theme.darkBg};
+    color: ${props => props.theme.textWhite};
     scrollbar-width: 0px;
+    height: 100vh;
 
     h1 {
-        color: ${props => props.theme.main};
+        color: ${props => props.theme.secondary};
         text-align: center;
         font-size: 32px;
         font-style: normal;
@@ -28,7 +30,7 @@ export const AboutMeWrapper = styled.section`
 export const AboutMeElement = styled.div<{ $long: number }>`
     margin-top: 15px;
     width: 70%;
-    color: ${props => props.theme.secondaryText};
+    color: ${props => props.theme.textWhite};
     font-size: 17px;
     font-weight: 700;
     text-align: justify;
@@ -58,12 +60,23 @@ export const CardItem = styled.div`
     display: grid;
     height: 275px;
     border-radius: 4px;
-    border: 1px solid #D9D9D9;
-    background: #FFF;
-    box-shadow: 3px 4px 6px -2px rgba(151, 151, 151, 0.71);
+    background: ${props => props.theme.cardBg};
     padding: 5px;
     box-sizing: border-box;
     margin-top: 15px;
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+
+    /*&::before {
+        position: absolute;
+        content: ' ';
+        background-color: rgba(151, 151, 151, 0.71);
+        display: block;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }*/
 
     @media ${device.mobileL} {
         width: 70%;
@@ -72,12 +85,23 @@ export const CardItem = styled.div`
         margin-top: 35px;
     }
 
-    label {
+    .info__container {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+        width: 100%;
+        height: 70%;
+        margin-bottom: auto;
+    }
+
+    .info__container > label {
         color: ${props => props.theme.titles};
         text-align: center;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 300;
+        font-size: 20px;
+        font-weight: 800;
         line-height: normal;
         margin-top: 15px;
 
@@ -86,25 +110,27 @@ export const CardItem = styled.div`
         }
     }
 
-    img {
-        width: 35px;
-        height: auto;
-        margin: 5px auto;
+    .info__container > img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        margin: 20px auto 10px auto;
         @media ${device.mobileL} {
             width: 30px;
             margin: 10px auto;
         }
     }
 
-    p{
-        color: ${props => props.theme.secondaryText};
+    .info__container > p:nth-of-type(1) {
+        color: ${props => props.theme.cardText};
         text-align: center;
-        font-size: 22px;
+        font-size: 18px;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         line-height: normal;
         width: 80%;
-        margin: 15px auto;
+        height: 40%;
+        margin: 43px auto 0px;
 
         @media ${device.mobileL} {
             width: 75%;
@@ -122,5 +148,32 @@ export const CardItem = styled.div`
         @media ${device.laptop} {
             font-size: 18px;
         }
+    }
+    .info__container > p:nth-of-type(2) {
+        color: ${props => props.theme.cardText};
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 80%;
+        margin: 3px auto 0px;
+    }
+
+    .bg__container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+
+    .bg__container > img{
+        width: 100%;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
     }
 `;

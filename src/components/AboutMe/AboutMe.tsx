@@ -19,10 +19,19 @@ export const AboutMe = () => {
             })}
             <CardsContainer>
                 {cards.map(card => (
-                    <CardItem key={card.title}>
-                        <label>{card.title}</label>
-                        <img alt={card.title} src={card.icon} />
-                        <p>{card.text}</p>
+                    <CardItem key={card.id} >
+                        <div className="bg__container">
+                            {card.bgImage}
+                        </div>
+                        <div className="info__container">
+                            <label>{card.title}</label>
+                            <img alt={card.title} src={card.icon} />
+                            {Array.isArray(card.text) && (
+                                card.text.map(item => (
+                                    <p key={item.length * Math.random()}>{item}</p>
+                                ))
+                            ) || <p>{card.text}</p>}
+                        </div>
                     </CardItem>
                 ))}
             </CardsContainer>

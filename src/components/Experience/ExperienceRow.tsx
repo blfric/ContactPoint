@@ -37,12 +37,12 @@ export const  ExperienceRowComponent = ({ keyJob = 'laPieza' }: ExperienceRowOpt
                 <span>{`{`}</span>
                 {experienceItems.map(item => {
                     if(item.link) {
-                        return(<p>
+                        return(<p key={item.href}>
                             <label>{item.label}:</label>
                             <a target="blank" href={item.href}>{` ${item.labelLink}`}</a>
                         </p>);
                     }
-                    return(<p><label>{item.label}:</label>{` ${item.data}`}</p>);
+                    return(<p key={item.label}><label>{item.label}:</label>{` ${item.data}`}</p>);
                 })}
                 <span>{`}`}</span>
             </CollapseSection>

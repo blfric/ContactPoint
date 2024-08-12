@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const WelcomeWrapper = styled.section`
     display: flex;
     width: 100%;
-    height: 75vh;
+    height: calc(100vh - 75px);
     min-height: 650px;
     position: relative;
     overflow: hidden;
@@ -69,27 +69,4 @@ export const SectionCover = styled.div`
         height: 5px;
         animation: ${props => blinkBox(props.theme.secondaryBlue)} 3s;
     }
-`;
-
-export const CarouselSection = styled.section`
-    display: flex;
-    width: 30%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: aliceblue;
-    flex-wrap: wrap;
-`;
-
-export const CarouselItem = styled.div<{ $bgImage: string }>`
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-image: url(${props => props.$bgImage});
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 `;

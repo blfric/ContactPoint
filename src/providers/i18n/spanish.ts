@@ -222,6 +222,11 @@ export const spanishContent = {
     "webDev": "< Desarrollador Web />",
     "name": "Ricardo",
     "lastName": "Blanco",
-    "currentAddress": "Cerrada Álamos 2511 B, Rancho Grande II, Tehuacán, Puebla",
-    "heroText": "Mejorando las experiencias, una línea de código a la vez: liberando la magia en la Web"
+    "currentAddress": "Tehuacán - Puebla, México",
+    "heroText": "Mejorando las experiencias, liberando la magia en la Web, una línea de código a la vez",
+    "ExperienceTitle": 'Con más de 5 años de experiencia',
+    "FooterCopyRights": ' 2024 Ricardo Blanco. Todos los derechos reservados.',
+    "linkStackFooter": '¿Buscas alguna tecnologia en especifico?',
+    "linkLabsFooter": 'Estos son los proyectos que he desarrollado por mi cuenta',
+    "linkContactFooter": '¿Quieres tu propia pagina web o un proyecto para tu negocio? ¡Contactame!'
 }
