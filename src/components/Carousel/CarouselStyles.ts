@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const CarouselSection = styled.section`
-    width: 30%;
-    height: 100%;
+    width: 27.5%;
+    height: 70%;
+    margin: 10px auto;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
@@ -12,14 +13,27 @@ export const CarouselSection = styled.section`
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
+    background-color: ${props => props.theme.carouselBg};
+    border-radius: 6px;
 `;
 
-export const CarouselItem = styled.div<{ $bgImage: string }>`
+export const CarouselItem = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
-    background-image: url(${props => props.$bgImage});
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        width: 100%;
+        text-align: center;
+        color: ${props => props.theme.carouselText};
+        font-size: 34px;
+    }
+
+    img {
+        width: 192px;
+        height: 192px;
+        margin-top: 70px
+    }
 `;

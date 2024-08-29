@@ -1,5 +1,6 @@
 export const lightTheme = {
     main: '#042A2B',
+    mainReverse: '#eeeeee',
     textWhite: '#FFFAFF',
     secondary: '#BA274A',
     secondaryText: 'rgb(37 37 37 / 70%)',
@@ -7,25 +8,40 @@ export const lightTheme = {
     purple: '#290025',
     whiteColor: '#FAFAFA',
     secondaryBlue: '#BA274A',
+    subTitleWeight: 300,
     navBorder: '#174041',
     toggleThemeBg: "#1e0404",
     darkBg: '#03060c',
     cardText: '#e1e5ed',
-    cardBg: '#111111'
+    cardBg: '#111111',
+    carouselText: '#BA274A',
+    carouselBg: '#e1e5ed',
+    status: '#6a994e',
+    contactBgRecruiter: '#24252B',
+    contactBgGeneral: '#151922',
+    warning: '#fb8500'
   };
   
   export const darkTheme = {
     main: '#eeeeee',
+    mainReverse: 'transparent',
     textWhite: '#111111',
     secondary: '#BA274A',
     secondaryText: '#8F7F95',
     titles: '#BA274A',
     purple: '#290025',
     whiteColor: '#FAFAFA',
-    secondaryBlue: 'rgb(37 37 37 / 70%)',
+    secondaryBlue: '#174041',
+    subTitleWeight: 400,
     navBorder: '#898989',
     toggleThemeBg: "#a11616",
     darkBg: '#e1e5ed',
     cardText: '#e1e5ed',
-    cardBg: '#EEEEEE'
+    cardBg: '#EEEEEE',
+    carouselText: '#eeeeee',
+    carouselBg: '#174041',
+    status: '#a11616',
+    contactBgRecruiter: '#ced4da',
+    contactBgGeneral: '#e5e5e5',
+    warning: '#eb5e28'
   };

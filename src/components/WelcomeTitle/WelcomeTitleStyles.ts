@@ -17,7 +17,7 @@ export const WelcomeWrapper = styled.section`
 
 export const HeroText = styled.div`
     display: flex;
-    width: 70%;
+    width: 60%;
     height: 100%;
     background-color: transparent;
     flex-direction: column;
@@ -35,7 +35,7 @@ export const HeroText = styled.div`
     > h2 {
         font-size: 20px;
         font-family: Oswald, sans-serif;
-        font-weight: 300;
+        font-weight: ${props => props.theme.subTitleWeight};
         color: ${props => props.theme.secondaryBlue};
         margin: 0;
         padding: 0;

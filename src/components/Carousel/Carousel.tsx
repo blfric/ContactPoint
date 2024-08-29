@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { CarouselItem, CarouselSection } from "./CarouselStyles";
 import { ImageCarousel } from "./utils";
+import { useTranslation } from "react-i18next";
 
 export const Carousel = () => {
+  const { t } = useTranslation();
   const carouselRef = useRef(null);
   const [state, setState] = useState(1);
   const [itemWidth, setItemWidth] = useState(0);
@@ -35,7 +37,11 @@ export const Carousel = () => {
   return (
     <CarouselSection ref={carouselRef}>
       {ImageCarousel.map((image) => {
-        return <CarouselItem key={image.id} $bgImage={image.src} />
+        const {id, alt, src, title} = image;
+        return <CarouselItem key={id}>
+          <h3>{t(title)}</h3>
+          <img src={src} alt={alt}/>
+        </CarouselItem>
       })}
     </CarouselSection>
   );

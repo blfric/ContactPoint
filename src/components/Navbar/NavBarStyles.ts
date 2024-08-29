@@ -215,6 +215,7 @@ export const SelectOptions = styled.section<{$show?: boolean}>`
 export const ResponsiveMenu = styled.div<{ $openMenu: boolean }>`
     display: flex;
     width: auto;
+    z-index: 3;
 
     .res__go__link {
         padding: 15px 24px;
@@ -243,7 +244,6 @@ export const ResponsiveMenu = styled.div<{ $openMenu: boolean }>`
         right: ${props => props.$openMenu ? '0px' : '-45vw'};
         border: solid 1px ${props => props.theme.secondary};
         transition: all .5s ease;
-        z-index: 1;
     }
 
     @media ${device.mobileL} {
@@ -257,7 +257,6 @@ export const ResponsiveMenu = styled.div<{ $openMenu: boolean }>`
         right: ${props => props.$openMenu ? '0' : ''};
         border: solid 1px ${props => props.theme.secondary};
         transition: all .5s ease-in-out;
-        z-index: 1;
     }
 
 `;

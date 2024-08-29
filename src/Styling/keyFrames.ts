@@ -105,3 +105,41 @@ export const blinkBox =  (color: string) => keyframes`
     background-color: ${color};
   }
 `;
+
+
+export const SlideCarousel = () => keyframes`
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(-100%);
+  }
+`;
+
+export const FloatingBubble = () => keyframes`
+  0% {
+    transform: scale(1) translate(0,0px);
+  }
+  20% {
+    transform: scaleY(0.95) scaleX(1.05);
+  }
+  50% {
+    transform: scaleY(0.98) scaleX(0.9) translate(0, 20px);
+  }
+  100% {
+    transform: scale(1) translate(0,0px);
+  }
+`;
+
+export const LoadingBars = () => keyframes`
+  0% {
+    height: 10px;
+  }
+
+  50% {
+    height: 50px;
+  }
+
+  100% {
+    height: 10px;
+  }
+`;

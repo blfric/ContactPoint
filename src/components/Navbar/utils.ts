@@ -22,15 +22,21 @@ export const navBarItems: NavItems[] = [
     {
         className: 'go__link',
         hClassName: 'res__go__link',
-        keyT: 'linkStack',
-        to: '/stack'
+        keyT: 'linkHome',
+        to: '/'
     },
     {
         className: 'go__link',
         hClassName: 'res__go__link',
+        keyT: 'linkStack',
+        to: '/stack'
+    },
+    /*{
+        className: 'go__link',
+        hClassName: 'res__go__link',
         keyT: 'linkLabs',
         to: '/labs'
-    },
+    },*/
     {
         className: 'go__link',
         hClassName: 'res__go__link',

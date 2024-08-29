@@ -42,12 +42,13 @@ export const Footer = () => {
                         </Link>
                     </div>
                     <div className='links__website'>
-                        {navBarItems.map((item, index) => (
-                            <div key={item.keyT + index} className='link__item'>
+                        {navBarItems.map((item, index) => {
+                            if(item.keyT !== 'linkHome')
+                            return(<div key={item.keyT + index} className='link__item'>
                                 <Link to={item.to} children={t(item.keyT)}/>
                                 <p>{t(`${item.keyT}Footer`)}</p>
-                            </div>
-                        ))}
+                            </div>)
+                        })}
                     </div>
                 </div>
                 <div className='social__links'>

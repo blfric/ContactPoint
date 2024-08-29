@@ -201,7 +201,7 @@ export const englishContent = {
             "label" : "Init date", "data": "03/12/2021"
         },
         {
-            "label" : "End date", "data": "Current Job"
+            "label" : "End date", "data": "Present"
         },
         {
             "label" : "Contact", "labelLink": "LinkedIn", "link": true, "href": "https://www.linkedin.com/in/israel-miguel-%C3%A1ngel-p%C3%A9rez-cruz-86369013b/"
@@ -228,5 +228,21 @@ export const englishContent = {
     "FooterCopyRights": ' 2024 Ricardo Blanco. All Rights Reserved.',
     "linkStackFooter": 'Looking for an specific tech or tool?',
     "linkLabsFooter": 'Here are some projects I had develop on my own',
-    "linkContactFooter": 'Need your own website or a bussines project? Contact me!'
+    "linkContactFooter": 'Need your own website or a bussines project? Contact me!',
+    "stackDB": "Database",
+    "stackVersionControl": 'Version Control System',
+    "contactTitleGeneral": 'Would you like to collaborate or get a quote for a project?',
+    "contactText": 'You can contact me through the following channels',
+    "whatsapp": 'WhatsApp!',
+    "link": 'LinkedIn',
+    "phone": 'Phone',
+    "mail": 'Email',
+    "statusJob": 'Status: ',
+    "statusJobDetail": 'Currently working but open to hearing offers.',
+    "recruiterTitle": 'Are you a recruiter? - You can get a copy of my written resume here!',
+    "emailPlaceholder": 'Insert your email here!',
+    "emailSending": 'A copy of my Resume will be send to your email!',
+    "emailSendingSuccess": 'The email was sent successfully! ',
+    "emailSendingWarning": 'Please remember to check your spam folder.',
+    "emailSendingError": 'Something went wrong! Please try again later.'
 }

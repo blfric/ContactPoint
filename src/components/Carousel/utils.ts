@@ -1,45 +1,38 @@
-import Carousel_01 from 'assets/carousel/crs_01.jpg';
-import Carousel_03 from 'assets/carousel/crs_03.jpg';
-import Carousel_04 from 'assets/carousel/crs_04.jpg';
-import Carousel_05 from 'assets/carousel/crs_05.jpg';
-import Carousel_07 from 'assets/carousel/crs_07.jpg';
-import Carousel_08 from 'assets/carousel/crs_08.jpg';
-import Carousel_09 from 'assets/carousel/crs_09.png';
+import Carousel_01 from 'assets/carousel/crs_1.png';
+import Carousel_02 from 'assets/carousel/crs_2.png';
+import Carousel_03 from 'assets/carousel/crs_3.png';
+import Carousel_04 from 'assets/carousel/crs_4.png';
+import Carousel_05 from 'assets/carousel/crs_5.png';
 
 export const ImageCarousel = [
     {
-        alt: 'Ricardo Blanco portfolio carousel 01',
+        alt: 'Frontend experience',
         src: Carousel_01,
-        id: 'fa2d6786'
+        id: 'fa2d6786',
+        title: 'Frontend'
     },
     {
-        alt: 'Ricardo Blanco portfolio carousel 03',
+        alt: 'Backend experience',
+        src: Carousel_02,
+        id: '3f386794',
+        title: 'Backend'
+    },
+    {
+        alt: 'Database experience',
         src: Carousel_03,
-        id: '3f386794'
+        id: '2fb652ca',
+        title: 'stackDB'
     },
     {
-        alt: 'Ricardo Blanco portfolio carousel 04',
+        alt: 'Devops experience',
         src: Carousel_04,
-        id: '2fb652ca'
+        id: '633f6c94',
+        title: 'DevOps'
     },
     {
-        alt: 'Ricardo Blanco portfolio carousel 05',
+        alt: 'Version control experience',
         src: Carousel_05,
-        id: '633f6c94'
-    },
-    {
-        alt: 'Ricardo Blanco portfolio carousel 07',
-        src: Carousel_07,
-        id: '0749131f'
-    },
-    {
-        alt: 'Ricardo Blanco portfolio carousel 08',
-        src: Carousel_08,
-        id: '3fc0bfac'
-    },
-    {
-        alt: 'Ricardo Blanco portfolio carousel 09',
-        src: Carousel_09,
-        id: '43f38f31'
+        id: '0749131f',
+        title: 'stackVersionControl'
     }
 ]

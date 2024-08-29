@@ -228,5 +228,20 @@ export const spanishContent = {
     "FooterCopyRights": ' 2024 Ricardo Blanco. Todos los derechos reservados.',
     "linkStackFooter": '¿Buscas alguna tecnologia en especifico?',
     "linkLabsFooter": 'Estos son los proyectos que he desarrollado por mi cuenta',
-    "linkContactFooter": '¿Quieres tu propia pagina web o un proyecto para tu negocio? ¡Contactame!'
+    "linkContactFooter": '¿Quieres tu propia pagina web o un proyecto para tu negocio? ¡Contactame!',
+    "stackDB": "Bases de datos",
+    "stackVersionControl": 'Sistema de Control de Versiones',
+    "contactTitleGeneral": '¿Te gustaría una colaboración o quisieras obtener una cotizacion para algun proyecto?',
+    "contactText": "Me puedes contactar a traves de los siguientes medios",
+    "whatsapp": 'WhatsApp!',
+    "link": 'LinkedIn',
+    "phone": 'Llámame!',
+    "mail": 'Correo electrónico',
+    "statusJob": 'Estado laboral: ',
+    "statusJobDetail": 'Actualmente trabajando pero abierto a escuchar ofertas',
+    "recruiterTitle": '¿Eres un reclutador? - ¡Puedes obtener una copia de mi CV aquí!',
+    "emailPlaceholder": 'Ingresa tu correo electronico',
+    "emailSending": 'Se te enviara una copia de mi CV a tu correo',
+    "emailSendingWarning": 'Porfavor recuerda revisar tu carpeta de spam.',
+    "emailSendingError": 'Ocurrio un error inesperado, por favor intentalo más tarde.'
 }
