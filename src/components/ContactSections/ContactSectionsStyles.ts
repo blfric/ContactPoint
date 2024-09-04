@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LoadingBars } from "Styling/keyFrames";
+import { device } from "Styling/sizing";
 
 
 export const SocialMediaStyled = styled.section`
@@ -60,6 +61,47 @@ export const SocialMediaStyled = styled.section`
             text-align: start;
         }
     }
+
+    @media ${device.laptop} {
+        width: 100%;
+    }
+    
+    @media ${device.tablet} {
+        width: 95%;
+
+        > img {
+            width: 105px;
+            margin: 45px auto 30px auto;
+        }
+
+        > h2 {
+            font-size: 20px;
+        }
+
+
+        > h3 {
+            font-size: 17px;
+        }
+
+        .contact__option{
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media ${device.mobileL} {
+        width: 100%;
+    }
+
+    @media ${device.mobileM} {
+        width: 100%;
+    }
+
+    @media (max-width: ${device.mobileS}) {
+        width: 100%;
+    }
+
 `;
 
 export const RecruitersSectionStyled = styled.section`
@@ -91,7 +133,7 @@ export const RecruitersSectionStyled = styled.section`
         margin: 15px auto;
         color: ${props => props.theme.carouselBg};
 
-        span {
+        > span {
             font-weight: 400;
             color: ${props => props.theme.status};
         }
@@ -115,10 +157,31 @@ export const RecruitersSectionStyled = styled.section`
         font-size: 16px;
     }
 
+    > span {
+        color: crimson;
+        font-size: 11px;
+        width: 80%;
+        text-align: center;
+        font-weight: 500;
+        display: block;
+        margin: -6px auto 0px;
+    }
+
+    button {
+        width: 70%;
+        padding: 12px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
     label {
         font-size: 14px;
         color: ${props => props.theme.status};
-        width: 50%;
+        width: 60%;
         margin: 0px auto;
         text-align: center;
     }
@@ -176,15 +239,78 @@ export const RecruitersSectionStyled = styled.section`
     animation-delay: 0.3s;
     }
 
+    @media ${device.laptop} {
+        width: 100%;
+    }
+    
+    @media ${device.tablet} {
+        width: 95%;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        > img {
+            width: 105px;
+            height: auto;
+            margin: 35px auto 20px auto;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        label {
+            font-size: 13px;
+            margin-bottom: 35px;
+        }
+    }
+
+    @media ${device.mobileL} {
+        width: 100%;
+    }
+
+    @media ${device.mobileM} {
+        width: 100%;
+    }
+
+    @media (max-width: ${device.mobileS}) {
+        width: 100%;
+    }
+
 `;
 
 export const ContactSectionStyled = styled.section`
-    width: 80%;
+    width: 85%;
     box-sizing: border-box;
     padding: 25px 40px;
     display: flex;
     flex-wrap: nowrap;
     min-height: calc(100vh - 75px);
     margin: auto;
+
+    @media ${device.laptop} {
+        width: 90%;
+    }
+    
+    @media ${device.tablet} {
+        width: 95%;
+        flex-direction: column;
+        padding: 15px 20px;
+        align-items: center;
+    }
+
+    @media ${device.mobileL} {
+        width: 100%;
+        padding: 0px;
+    }
+
+    @media ${device.mobileM} {
+        width: 100%;
+    }
+
+    @media (max-width: ${device.mobileS}) {
+        width: 100%;
+    }
 
 `;

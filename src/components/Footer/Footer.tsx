@@ -4,33 +4,33 @@ import { FooterComponent } from './FooterStyled';
 import Logo from 'assets/logoPortfolio.png';
 import { SocialItems, footerSocials, navBarItems } from 'components/Navbar';
 
+export const renderSocialItem = (data: SocialItems, children: React.ReactElement) => {
+    switch(data.type) {
+
+        case 'link':
+            return <Link to={data.to} key={data.type}>
+                        {children}
+                    </Link>;
+
+        case 'mail':
+            return <Link to={`mailto:${data.to}`} key={data.type}>
+                        {children}
+                    </Link>;
+
+        case 'phone':
+            return <Link to={`tel:${data.to}`} key={data.type}>
+                        {children}
+                    </Link>;
+
+        case 'whatsapp': 
+            return <Link to={`https://api.whatsapp.com/send?phone=${data.to}&text=Hi!`} key={data.type}>
+                {children}
+            </Link>
+    }
+};
+
 export const Footer = () => {
     const { t } = useTranslation();
-
-    const renderSocialItem = (data: SocialItems, children: React.ReactElement) => {
-        switch(data.type) {
-
-            case 'link':
-                return <Link to={data.to} key={data.type}>
-                            {children}
-                        </Link>;
-
-            case 'mail':
-                return <Link to={`mailto:${data.to}`} key={data.type}>
-                            {children}
-                        </Link>;
-
-            case 'phone':
-                return <Link to={`tel:${data.to}`} key={data.type}>
-                            {children}
-                        </Link>;
-
-            case 'whatsapp': 
-                return <Link to={`https://api.whatsapp.com/send?phone=${data.to}&text=Hi!`} key={data.type}>
-                    {children}
-                </Link>
-        }
-    };
 
     return(
         <FooterComponent>

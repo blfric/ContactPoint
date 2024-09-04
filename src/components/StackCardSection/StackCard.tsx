@@ -14,7 +14,7 @@ export const StackCardItem = (data: CardStackTypes) => {
                 <img src={data.urlIcon} alt={data.cardName}/>
             </button>
             <div className={`collapse-section ${collapse && 'collapse-show'}`}>
-                {data.elements.map(item => <p>{item}</p>)}
+                {data.elements.map(item => <p key={item}>{item}</p>)}
             </div>
         </StackCard>
     )

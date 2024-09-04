@@ -5,7 +5,7 @@ import { StackCards } from "./utils";
 export const StackCardsSection = () => {
     return(
         <StackCardSectionStyled>
-            {StackCards.map(stack => (<StackCardItem {...stack}/>))}
+            {StackCards.map(stack => (<StackCardItem key={stack.cardName} {...stack}/>))}
         </StackCardSectionStyled>
     )
 };

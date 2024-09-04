@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { SocialMediaStyled } from "./ContactSectionsStyles";
 import { footerSocials } from "components/Navbar";
 import GeneralLogo from "assets/collavorative.png";
+import { renderSocialItem } from "components/Footer";
 
 export const SocialMediaSection = () => {
     const { t } = useTranslation();
@@ -15,10 +16,11 @@ export const SocialMediaSection = () => {
             {footerSocials.map(item => {
                 const {alt, src, type} = item;
                 return(
+                    renderSocialItem(item,
                     <div className="contact__option">
                         <img src={src} alt={alt} />
                         <p>{t(type)}</p>
-                    </div>
+                    </div>)
                 )
             })}
         </SocialMediaStyled>

@@ -243,5 +243,8 @@ export const spanishContent = {
     "emailPlaceholder": 'Ingresa tu correo electronico',
     "emailSending": 'Se te enviara una copia de mi CV a tu correo',
     "emailSendingWarning": 'Porfavor recuerda revisar tu carpeta de spam.',
-    "emailSendingError": 'Ocurrio un error inesperado, por favor intentalo más tarde.'
+    "emailSendingError": 'Ocurrio un error inesperado, por favor intentalo más tarde.',
+    "emailButtonText": "Enviar",
+    "emailRequired": "Por favor ingresa tu correo.",
+    "emailWrong": "Ingresa un correo valido."
 }

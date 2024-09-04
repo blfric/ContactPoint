@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "Styling/sizing";
 
 export const FooterComponent = styled.footer`
     width: 100%;
@@ -92,5 +93,53 @@ export const FooterComponent = styled.footer`
         padding: 6px;
         border-radius: 8px;
     }
+    
+    @media ${device.tablet} {
+        .social__links {
+            flex-wrap: wrap;
+        }
+    }
 
+    @media ${device.mobileL} {
+        .social__links {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .logo {
+            padding: 0;
+        }
+
+        .links__website{
+            width: 95%;
+        }
+
+        .link__item{
+            width: 50%;
+        }
+    }
+
+    @media ${device.mobileM} {
+        height: auto;
+        flex-wrap: wrap;
+
+        .footer__links {
+            flex-wrap: wrap;
+        }
+
+        .links__section {
+            width: 100%;
+        }
+
+        .social__links {
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin: 20px auto;
+        }
+    }
+
+    @media (max-width: ${device.mobileS}) {
+    }
 `;
