@@ -1,4 +1,5 @@
 import { RemoveCover, blinkBox } from "Styling/keyFrames";
+import { device } from "Styling/sizing";
 import styled from "styled-components";
 
 export const WelcomeWrapper = styled.section`
@@ -13,6 +14,22 @@ export const WelcomeWrapper = styled.section`
     box-sizing: border-box;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @media ${device.laptop} {
+        width: 100%;
+        padding: 65px 55px;
+    }
+    
+    @media ${device.tablet} {
+        padding: 55px 45px;
+        height: auto;
+    }
+
+    @media ${device.mobileL} {
+        padding: 15px 30px;
+        flex-direction: column;
+        height: auto;
+    }
 `;
 
 export const HeroText = styled.div`
@@ -48,6 +65,17 @@ export const HeroText = styled.div`
         color: ${props => props.theme.textWhite};
         padding-right: 75px;
         box-sizing: border-box;
+    }
+    
+    @media ${device.tablet} {
+        width: 100%;
+        height: auto;
+    }
+
+    @media ${device.mobileL} {
+        padding: 25px 5px;
+        flex-direction: column;
+        height: auto;
     }
 `;
 

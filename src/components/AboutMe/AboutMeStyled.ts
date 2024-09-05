@@ -25,6 +25,10 @@ export const AboutMeWrapper = styled.section`
             font-weight: 500;
         }
     }
+
+    @media ${device.tablet} {
+        height: auto;
+    }
 `;
 
 export const AboutMeElement = styled.div<{ $long: number }>`
@@ -48,6 +52,10 @@ export const CardsContainer = styled.div`
     justify-content: space-evenly;
     margin: 85px auto;
     flex-wrap: wrap;
+
+    @media ${device.tablet} {
+        margin: 45px auto 30px;
+    }
 
     @media ${device.mobileS} {
         margin: 45px auto;
@@ -77,6 +85,12 @@ export const CardItem = styled.div`
         width: 100%;
         z-index: 1;
     }*/
+
+
+    @media ${device.tablet} {
+        margin: 45px auto 30px;
+        width: 80%;
+    }
 
     @media ${device.mobileL} {
         width: 70%;

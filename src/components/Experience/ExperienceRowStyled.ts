@@ -1,4 +1,5 @@
 import { ShowProgressively } from "Styling/keyFrames";
+import { device } from "Styling/sizing";
 import styled from "styled-components";
 
 export const ExperienceComponent = styled.section`
@@ -18,6 +19,18 @@ export const ExperienceComponent = styled.section`
         font-size: 24px;
         margin: 20px auto 50px;
     }
+
+    @media ${device.tablet} {
+        height: auto;
+        min-height: auto;
+
+        h1 {
+            width: 80%;
+            font-size: 22px;
+            text-align: center;
+            margin: 50px auto 50px;
+        }
+    }
 `;
 
 export const ExperienceRow = styled.section`
@@ -27,6 +40,11 @@ export const ExperienceRow = styled.section`
     align-items: center;
     height: auto;
     height: 16%;
+
+
+    @media ${device.tablet} {
+        flex-direction: column;
+    }
 `;
 
 export const LogoSection = styled.div<{ $bgColor: string, $show: boolean }>`
@@ -47,6 +65,25 @@ export const LogoSection = styled.div<{ $bgColor: string, $show: boolean }>`
         margin-left: ${prop => prop.$show ? '-24px' : '0px'};
         margin-bottom: ${prop => prop.$show ? '335px' : '0px'};
         transition: all 1s;
+    }
+
+
+    @media ${device.tablet} {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        min-height: 125px;
+        width: 100%;
+
+        h1 {
+            width: 80%;
+            font-size: 22px;
+            text-align: center;
+            margin: 50px auto 50px;
+        }
+
+        > img {
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
     }
 `;
 
@@ -84,5 +121,14 @@ export const CollapseSection = styled.div<{ $show: boolean }>`
             color: ${props => props.theme.titles};
             font-weight: 800;
         }
+    }
+
+    @media ${device.tablet} {
+        width: 100%;
+        left: 0;
+        position: relative;
+        padding: 35px 15px;
+        box-sizing: border-box;
+        max-height: 1000px;
     }
 `;
